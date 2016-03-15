@@ -36,7 +36,7 @@ var answer3=prompt("Do I play the Trombone?");
 			alert("Yes! I play the Trombone!")}
 
 
-//Numerical variable question
+//Numerical variable question with an alert to the user dependent on answer
 
 var number=prompt("What is my favorite number?")
 
