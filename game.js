@@ -6,34 +6,28 @@ var welcome=prompt("Welcome to my page! Please answer a few questions that will 
 
 var counter=0
 
+//This is the function I created to repeat an action that is happening repeatedly
 
+function answersResponse(question, response) {
+
+	var answer1=prompt(question);
+
+		if ((answer1==="yes")||(answer1==="Yes")||(answer1==="y")||(answer1==="Y"))	{
+
+			counter++;
+
+			document.getElementById("1").innerHTML=(response)}
+			
+
+}
 //These are the questions about me to the user//
+answersResponse ("Is my name Amina?", "Yes! My name is Amina");
 
-var answer1=prompt("Is my name Amina?");
+answersResponse ("Do I have 5 children?", "Yes! I have 5 children!");
 
-	if ((answer1==="yes")||(answer1==="Yes")||(answer1==="y")||(answer1==="Y"))	{
-
-		counter++;
-
-		alert("Yes! My name is Amina")}
+answersResponse ("Do I play the Trombone?", "Yes! I play the Trombone!");
 
 
-
-var answer2=prompt("Do I have 5 children?");
-
-	if ((answer2==="yes")||(answer2==="Yes")||(answer2==="y")||(answer2==="Y")) {
-
-		counter++;
-
-		alert("Yes! I have 5 children!")}
-
-var answer3=prompt("Do I play the Trombone?");
-
-	if ((answer3==="yes")||(answer3==="Yes")||(answer3==="y")||(answer3==="Y"))	{
-
-		counter++;
-
-			alert("Yes! I play the Trombone!")}
 
 
 //Numerical variable question
@@ -44,7 +38,7 @@ var number=prompt("What is my favorite number?")
 
 			counter++;
 
-			alert("Yes!");
+			document.getElementById("4").innerHTML="Yes!";
 
 
 	}
@@ -52,15 +46,15 @@ var number=prompt("What is my favorite number?")
 
 	else if(number<17)	{
 
-		alert("Too low!");
+		document.getElementById("4").innerHTML="Too low!";
 	}
 
 	else if(number>17) {
 
-		alert("Too high!");
+		document.getElementById("4").innerHTML="Too high!";
 	}
 
 // End of questions results from the counter
 
-		alert("Great! You answered "+counter+" correct! You know me!")
+		document.getElementById("5").innerHTML="Great! You answered "+counter+" correct! You know me!"
 //End of questions.
