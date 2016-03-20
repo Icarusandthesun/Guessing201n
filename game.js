@@ -16,7 +16,7 @@ function answersResponse(question, response) {
 
 			counter++;
 
-			document.getElementById("1").innerHTML=(response)}
+			document.getElementById("guess").innerHTML+="<li>"+response+"</li>"}
 			
 
 }
@@ -38,7 +38,7 @@ var number=prompt("What is my favorite number?")
 
 			counter++;
 
-			document.getElementById("4").innerHTML="Yes!";
+			document.getElementById("guess").innerHTML="Yes!";
 
 
 	}
